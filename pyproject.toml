@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "thesis-project"
+version = "0.1.0"
+description = "Several experiments exploring the Emergence of Temperature Concept within Deep Neural Networks through Next-Frame Image Prediction by using Keras (TensorFlow)."
+authors = ["Dario Gallego <99gallegodario@gmail.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.26.4"
+matplotlib = "^3.9.0"
+opencv-python = "^4.9.0"
+tqdm = "^4.66.4"
+scikit-learn = "^1.5.0"
+keras = "^3.3.3"
+xgboost = "^2.0.3"
+pybullet = "^3.2.6"
+ruff = "^0.4.7"
+black = {extras = ["jupyter"], version = "^24.4.2"}
+pdoc3 = "^0.10.0"
+isort = "^5.13.0"
+jupyterlab = "^4.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
