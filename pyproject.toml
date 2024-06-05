@@ -3,7 +3,7 @@ name = "thesis-project"
 version = "0.1.0"
 description = "Several experiments exploring the Emergence of Temperature Concept within Deep Neural Networks through Next-Frame Image Prediction by using Keras (TensorFlow)."
 authors = ["Dario Gallego <99gallegodario@gmail.com>"]
-package-mode = false
+packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -27,6 +27,14 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.ruff]
 line-length = 88
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["A", "D", "E", "F", "I", "N", "PD", "TID", "UP"]
+ignore = ["D100", "D205"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "numpy"
+
+[tool.ruff.lint.isort]
+known-local-folder = ["src"]
