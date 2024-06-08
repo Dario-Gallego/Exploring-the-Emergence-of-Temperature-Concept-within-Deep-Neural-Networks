@@ -6,7 +6,7 @@ import numpy as np
 import pybullet as p
 from tqdm import tqdm
 
-from src.utils import get_grayscale_ball_plot
+from src.dataset.utils import get_grayscale_ball_plot
 
 
 def create_ball(density: float, radius: float) -> int:
