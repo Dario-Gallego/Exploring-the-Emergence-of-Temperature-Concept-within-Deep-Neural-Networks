@@ -21,7 +21,7 @@ def load_images(pattern: str, colored_balls: bool = False) -> np.ndarray:
 
     Returns
     -------
-    np.ndarray
+    images : np.ndarray
         Array containing the loaded images.
     """
     if colored_balls:
@@ -80,7 +80,7 @@ def compute_temperature(data_folder: str, num_balls: int) -> np.ndarray:
 
     Returns
     -------
-    np.ndarray
+    temperature : np.ndarray
         Temperature of each system.
     """
     # Load the coordinates from the CSV file
@@ -136,6 +136,7 @@ def load_and_process_coordinates(
         ),
         axis=1,
     )
+
     return processed_coordinates
 
 

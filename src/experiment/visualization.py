@@ -28,7 +28,7 @@ def plot_frames(
     colored_balls : bool
         Indicates whether the balls are colored. Default is False.
     num_images : int
-        The number of images to plot (default is 10).
+        The number of images to plot. Default is 10.
     """
     last_layer_shape = 3 if colored_balls else 1
 
@@ -125,7 +125,7 @@ def plot_frames_and_optical_flow(
         Array with second frames of the dataset with shape (num_systems, pix, pix, 1).
     optical_flow : np.ndarray
         Computed optical flow with shape (num_systems, pix, pix, 2).
-    num_samples : int, optional
+    num_samples : int
         Number of samples to plot, by default 5.
     """
     for i in range(num_samples):

@@ -40,4 +40,5 @@ def get_grayscale_ball_plot(
     plot_gray /= np.max(plot_gray)
     ax.figure.canvas.renderer.clear()
     ax.clear()
+
     return plot_gray
