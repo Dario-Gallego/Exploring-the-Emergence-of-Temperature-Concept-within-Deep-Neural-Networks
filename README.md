@@ -5,4 +5,4 @@ This repository is a collection of [Jupyter](https://jupyter.org/) notebooks int
 
 The whole code is the result of a final Master's Thesis of the [Master's Degree in Fundamental Principles of Data Science](https://mat.ub.edu/sciencedata/) supervised by Oriol Pujol and Jordi Vitrià.
 
-The notebooks have been written and tested on Keras (2.12.0) and TensorFlow (2.12.0) and the data generation has dependency with the [PyBullet](https://github.com/bulletphysics/bullet3) library.
+The notebooks have been written and tested on Python 3.10 and Keras (3.3.3) and the data generation uses [PyBullet](https://github.com/bulletphysics/bullet3) library.
