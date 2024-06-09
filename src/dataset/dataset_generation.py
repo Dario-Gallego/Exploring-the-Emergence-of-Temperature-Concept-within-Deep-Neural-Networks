@@ -272,7 +272,7 @@ def calculate_ball_coordinates(
     return coordinates, ax_min, ax_max
 
 
-def generate_images(dataset, ax_min, ax_max, folder_path, use_color):
+def generate_images(dataset: np.ndarray, ax_min: float, ax_max: float, folder_path: str, use_color: bool) -> None:
     """
     Generate input and output images from the dataset.
 

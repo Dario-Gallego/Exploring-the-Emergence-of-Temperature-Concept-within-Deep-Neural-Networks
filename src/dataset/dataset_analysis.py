@@ -2,13 +2,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def plot_ball_positions(ax, dataset_row, num_balls: int) -> None:
+def plot_ball_positions(ax: plt.Axes, dataset_row: np.ndarray, num_balls: int) -> None:
     """
     Plot the positions of the balls in the three frames on the given axes.
 
     Parameters
     ----------
-    ax : matplotlib.axes.Axes
+    ax : plt.Axes
         The axes on which to plot the positions.
     dataset_row : np.ndarray
         A row from the dataset containing ball positions and velocities.
@@ -26,7 +26,7 @@ def plot_ball_positions(ax, dataset_row, num_balls: int) -> None:
             )
 
 
-def calculate_length(dataset_row, num_balls: int) -> float:
+def calculate_length(dataset_row: np.ndarray, num_balls: int) -> float:
     """
     Calculate the length between initial and second frame positions of the first ball.
     All balls share the same velocity magnitude, so length is equal for all balls.
@@ -49,7 +49,7 @@ def calculate_length(dataset_row, num_balls: int) -> float:
     )
 
 
-def calculate_speed_length_ratio(dataset_row, num_balls: int) -> float:
+def calculate_speed_length_ratio(dataset_row: np.ndarray, num_balls: int) -> float:
     """
     Calculate the ratio of speed to length for the first ball.
     All balls share the same speed, so it can be computed from any ball.

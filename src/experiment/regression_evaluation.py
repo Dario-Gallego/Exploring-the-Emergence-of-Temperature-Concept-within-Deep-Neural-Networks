@@ -55,7 +55,7 @@ def train_and_evaluate_linear_temperature_regressor(
     encoded_val: np.ndarray,
     temperature_train: np.ndarray,
     temperature_val: np.ndarray,
-) -> float:
+) -> RegressorMixin:
     """
     Train the temperature linear regressor model and evaluate it on the validation set.
 
