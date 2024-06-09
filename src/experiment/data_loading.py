@@ -136,7 +136,7 @@ def load_and_process_coordinates(
         ),
         axis=1,
     )
-    
+
     return processed_coordinates
 
 
